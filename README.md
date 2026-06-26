@@ -1,7 +1,5 @@
 # Saber Inverso — Estimador de puntajes Saber 11
 
-> Carpeta/imágenes Docker conservan el slug técnico `icfes-inverso`; el nombre de cara al usuario es **Saber Inverso**.
-
 Dado el **puntaje de admisión (ponderado)** de un programa de la **Universidad del
 Quindío**, este sistema estima las **notas por área del Saber 11 más probables**
 que producen ese puntaje, junto con alternativas ordenadas por probabilidad y un
@@ -91,7 +89,7 @@ Periodos usados (formato 2014-2 en adelante): `20142, 20152, 20162, 20172, 20194
 Requisitos: Docker + Docker Compose.
 
 ```bash
-cd icfes-inverso
+cd saber-inverso
 cp env.example .env          # opcional, ajusta WEB_PORT / población por defecto
 docker compose up --build
 ```
@@ -157,7 +155,7 @@ curl -s localhost:8000/api/estimate -H 'content-type: application/json' \
 ## Estructura
 
 ```
-icfes-inverso/
+saber-inverso/
 ├── docker-compose.yml
 ├── data/                      # artefactos (committeados); data/raw/ es caché (ignorado)
 ├── source/                    # Excel oficial de ponderados (entrada del ETL)

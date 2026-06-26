@@ -1,4 +1,4 @@
-name: icfes-inverso
+name: saber-inverso
 
 services:
   # One-shot data pipeline: downloads ICFES microdata, computes mu/Sigma per
