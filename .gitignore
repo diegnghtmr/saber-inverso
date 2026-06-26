@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Node / Astro
+**/node_modules/
+**/dist/
+**/.astro/
+
+# Env
+.env
+
+# ETL raw cache (large; regenerable). Computed JSON artifacts ARE committed.
+data/raw/
+
+# Source inputs — NOT redistributable: individual results PDF (personal data)
+# and the third-party UQ weights Excel (copyright). The ETL reads them locally.
+source/
+
+# Playwright CLI artifacts
+.playwright-cli/

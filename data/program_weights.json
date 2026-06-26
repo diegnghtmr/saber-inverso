@@ -1,0 +1,383 @@
+{
+  "areas": [
+    "lectura_critica",
+    "matematicas",
+    "sociales_ciudadanas",
+    "c_naturales",
+    "ingles"
+  ],
+  "programs": [
+    {
+      "facultad": "Facultad de Ciencias Agroindustriales",
+      "programa": "Zootecnia",
+      "weights": {
+        "lectura_critica": 0.2,
+        "matematicas": 0.15,
+        "sociales_ciudadanas": 0.2,
+        "c_naturales": 0.35,
+        "ingles": 0.1
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias Agroindustriales",
+      "programa": "Ingeniería de Alimentos",
+      "weights": {
+        "lectura_critica": 0.15,
+        "matematicas": 0.3,
+        "sociales_ciudadanas": 0.1,
+        "c_naturales": 0.35,
+        "ingles": 0.1
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias Básicas y Tecnologías",
+      "programa": "Física",
+      "weights": {
+        "lectura_critica": 0.25,
+        "matematicas": 0.25,
+        "sociales_ciudadanas": 0.15,
+        "c_naturales": 0.2,
+        "ingles": 0.15
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias Básicas y Tecnologías",
+      "programa": "Química",
+      "weights": {
+        "lectura_critica": 0.15,
+        "matematicas": 0.15,
+        "sociales_ciudadanas": 0.1,
+        "c_naturales": 0.5,
+        "ingles": 0.1
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias Básicas y Tecnologías",
+      "programa": "Biología",
+      "weights": {
+        "lectura_critica": 0.2,
+        "matematicas": 0.15,
+        "sociales_ciudadanas": 0.16,
+        "c_naturales": 0.34,
+        "ingles": 0.15
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias Básicas y Tecnologías",
+      "programa": "Tecnología en Instrumentación Electrónica",
+      "weights": {
+        "lectura_critica": 0.15,
+        "matematicas": 0.35,
+        "sociales_ciudadanas": 0.1,
+        "c_naturales": 0.15,
+        "ingles": 0.25
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias de la Educación",
+      "programa": "Licenciatura en Literatura y Lengua Castellana",
+      "weights": {
+        "lectura_critica": 0.4,
+        "matematicas": 0.1,
+        "sociales_ciudadanas": 0.2,
+        "c_naturales": 0.1,
+        "ingles": 0.2
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias de la Educación",
+      "programa": "Licenciatura en Educación Física, Recreación y Deportes",
+      "weights": {
+        "lectura_critica": 0.3,
+        "matematicas": 0.1,
+        "sociales_ciudadanas": 0.3,
+        "c_naturales": 0.1,
+        "ingles": 0.2
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias de la Educación",
+      "programa": "Licenciatura en Educación Infantil",
+      "weights": {
+        "lectura_critica": 0.15,
+        "matematicas": 0.08,
+        "sociales_ciudadanas": 0.7,
+        "c_naturales": 0.0,
+        "ingles": 0.07
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias de la Educación",
+      "programa": "Licenciatura en Ciencias Naturales y Educación Ambiental",
+      "weights": {
+        "lectura_critica": 0.2,
+        "matematicas": 0.15,
+        "sociales_ciudadanas": 0.2,
+        "c_naturales": 0.3,
+        "ingles": 0.15
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias de la Educación",
+      "programa": "Licenciatura en Lenguas Modernas con Énfasis en Inglés y Francés",
+      "weights": {
+        "lectura_critica": 0.3,
+        "matematicas": 0.1,
+        "sociales_ciudadanas": 0.2,
+        "c_naturales": 0.1,
+        "ingles": 0.3
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias de la Educación",
+      "programa": "Licenciatura en Ciencias Sociales",
+      "weights": {
+        "lectura_critica": 0.2,
+        "matematicas": 0.15,
+        "sociales_ciudadanas": 0.3,
+        "c_naturales": 0.15,
+        "ingles": 0.2
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias de la Educación",
+      "programa": "Licenciatura en Matemáticas",
+      "weights": {
+        "lectura_critica": 0.2,
+        "matematicas": 0.4,
+        "sociales_ciudadanas": 0.15,
+        "c_naturales": 0.1,
+        "ingles": 0.15
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias de la Salud",
+      "programa": "Seguridad y Salud en el Trabajo",
+      "weights": {
+        "lectura_critica": 0.3,
+        "matematicas": 0.2,
+        "sociales_ciudadanas": 0.15,
+        "c_naturales": 0.2,
+        "ingles": 0.15
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias de la Salud",
+      "programa": "Gerontología",
+      "weights": {
+        "lectura_critica": 0.2714,
+        "matematicas": 0.1357,
+        "sociales_ciudadanas": 0.22145,
+        "c_naturales": 0.22145,
+        "ingles": 0.15
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias de la Salud",
+      "programa": "Medicina",
+      "weights": {
+        "lectura_critica": 0.2,
+        "matematicas": 0.15,
+        "sociales_ciudadanas": 0.2,
+        "c_naturales": 0.3,
+        "ingles": 0.15
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias de la Salud",
+      "programa": "Enfermería",
+      "weights": {
+        "lectura_critica": 0.175,
+        "matematicas": 0.175,
+        "sociales_ciudadanas": 0.25,
+        "c_naturales": 0.25,
+        "ingles": 0.15
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias Económicas, Administrativas y Contables",
+      "programa": "Administración de Negocios",
+      "weights": {
+        "lectura_critica": 0.3,
+        "matematicas": 0.2,
+        "sociales_ciudadanas": 0.2,
+        "c_naturales": 0.15,
+        "ingles": 0.15
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias Económicas, Administrativas y Contables",
+      "programa": "Contaduría Pública",
+      "weights": {
+        "lectura_critica": 0.33,
+        "matematicas": 0.22,
+        "sociales_ciudadanas": 0.19,
+        "c_naturales": 0.07,
+        "ingles": 0.19
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias Económicas, Administrativas y Contables",
+      "programa": "Administración Financiera",
+      "weights": {
+        "lectura_critica": 0.25,
+        "matematicas": 0.247,
+        "sociales_ciudadanas": 0.205,
+        "c_naturales": 0.153,
+        "ingles": 0.145
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias Económicas, Administrativas y Contables",
+      "programa": "Economía",
+      "weights": {
+        "lectura_critica": 0.2,
+        "matematicas": 0.3,
+        "sociales_ciudadanas": 0.3,
+        "c_naturales": 0.1,
+        "ingles": 0.1
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias Humanas y Bellas Artes",
+      "programa": "Filosofía",
+      "weights": {
+        "lectura_critica": 0.45,
+        "matematicas": 0.1,
+        "sociales_ciudadanas": 0.2,
+        "c_naturales": 0.15,
+        "ingles": 0.1
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias Humanas y Bellas Artes",
+      "programa": "Artes Visuales",
+      "weights": {
+        "lectura_critica": 0.4,
+        "matematicas": 0.1,
+        "sociales_ciudadanas": 0.2,
+        "c_naturales": 0.2,
+        "ingles": 0.1
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias Humanas y Bellas Artes",
+      "programa": "Ciencia de la Información y la Documentación, Bibliotecología y Archivística",
+      "weights": {
+        "lectura_critica": 0.35,
+        "matematicas": 0.1,
+        "sociales_ciudadanas": 0.25,
+        "c_naturales": 0.1,
+        "ingles": 0.2
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias Humanas y Bellas Artes",
+      "programa": "Comunicación Social - Periodismo",
+      "weights": {
+        "lectura_critica": 0.3,
+        "matematicas": 0.15,
+        "sociales_ciudadanas": 0.27,
+        "c_naturales": 0.08,
+        "ingles": 0.2
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ciencias Humanas y Bellas Artes",
+      "programa": "Trabajo Social",
+      "weights": {
+        "lectura_critica": 0.25,
+        "matematicas": 0.1,
+        "sociales_ciudadanas": 0.25,
+        "c_naturales": 0.2,
+        "ingles": 0.2
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ingeniería",
+      "programa": "Ingeniería Electrónica",
+      "weights": {
+        "lectura_critica": 0.2,
+        "matematicas": 0.35,
+        "sociales_ciudadanas": 0.1,
+        "c_naturales": 0.25,
+        "ingles": 0.1
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ingeniería",
+      "programa": "Ingeniería Civil",
+      "weights": {
+        "lectura_critica": 0.2,
+        "matematicas": 0.35,
+        "sociales_ciudadanas": 0.15,
+        "c_naturales": 0.2,
+        "ingles": 0.1
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ingeniería",
+      "programa": "Ingeniería Topográfica y Geomática",
+      "weights": {
+        "lectura_critica": 0.2,
+        "matematicas": 0.35,
+        "sociales_ciudadanas": 0.15,
+        "c_naturales": 0.2,
+        "ingles": 0.1
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ingeniería",
+      "programa": "Tecnología en Obras Civiles",
+      "weights": {
+        "lectura_critica": 0.2,
+        "matematicas": 0.35,
+        "sociales_ciudadanas": 0.15,
+        "c_naturales": 0.2,
+        "ingles": 0.1
+      },
+      "weight_sum": 1.0
+    },
+    {
+      "facultad": "Facultad de Ingeniería",
+      "programa": "Ingeniería de Sistemas y Computación",
+      "weights": {
+        "lectura_critica": 0.2,
+        "matematicas": 0.35,
+        "sociales_ciudadanas": 0.2,
+        "c_naturales": 0.15,
+        "ingles": 0.1
+      },
+      "weight_sum": 1.0
+    }
+  ]
+}

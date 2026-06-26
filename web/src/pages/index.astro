@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import EstimatorIsland from '../features/estimator/EstimatorIsland';
+---
+
+<BaseLayout>
+  <header class="site-header">
+    <div class="container">
+      <span class="hero-badge">Saber 11 · Universidad del Quindío</span>
+      <h1 class="site-title">Saber Inverso</h1>
+      <p class="site-tagline">
+        Dado un programa de la <strong>Universidad del Quindío</strong> y tu puntaje ponderado de
+        admisión, estima los puntajes más probables por área del examen <strong>Saber 11</strong>.
+      </p>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <EstimatorIsland client:load />
+    </div>
+  </main>
+
+  <section class="how-it-works">
+    <div class="container">
+      <h2>¿Cómo funciona?</h2>
+      <div class="how-grid">
+        <div class="how-card">
+          <span class="how-step" aria-hidden="true">1</span>
+          <p>
+            <strong>Selecciona el programa</strong> al que aspiras en la Universidad del Quindío y el
+            puntaje ponderado requerido.
+          </p>
+        </div>
+        <div class="how-card">
+          <span class="how-step" aria-hidden="true">2</span>
+          <p>
+            <strong>Elige la población de referencia</strong>: nacional (todos los presentantes del
+            Saber 11) o regional (departamento del Quindío).
+          </p>
+        </div>
+        <div class="how-card">
+          <span class="how-step" aria-hidden="true">3</span>
+          <p>
+            <strong>El modelo busca</strong> en la distribución conjunta de puntajes históricos del
+            ICFES qué combinación de áreas produce ese ponderado con mayor frecuencia.
+          </p>
+        </div>
+        <div class="how-card">
+          <span class="how-step" aria-hidden="true">4</span>
+          <p>
+            <strong>Obtienes</strong> la combinación más probable y alternativas ordenadas por
+            probabilidad relativa.
+          </p>
+        </div>
+      </div>
+      <p class="how-note">
+        Los puntajes mostrados son estimaciones estadísticas basadas en datos históricos. No
+        representan puntajes mínimos oficiales de admisión ni garantizan resultado alguno.
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Datos: ICFES — Saber 11 (<a
+          href="https://datos.gov.co"
+          target="_blank"
+          rel="noopener noreferrer">datos.gov.co</a
+        >), licencia CC BY-SA 4.0
+      </p>
+      <p class="footer-disclaimer">
+        Esta herramienta es un estimador estadístico de carácter informativo. No es una fuente
+        oficial de información académica ni de admisiones de la Universidad del Quindío.
+      </p>
+    </div>
+  </footer>
+</BaseLayout>

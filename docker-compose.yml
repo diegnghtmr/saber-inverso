@@ -1,0 +1,37 @@
+name: icfes-inverso
+
+services:
+  # One-shot data pipeline: downloads ICFES microdata, computes mu/Sigma per
+  # population and parses the program weights. Disabled by default (the repo
+  # ships the precomputed artifacts in ./data). Refresh with:
+  #   docker compose --profile etl run --rm etl
+  etl:
+    build: ./services/etl
+    profiles: ["etl"]
+    environment:
+      ICFES_DATA_DIR: /data
+      ICFES_XLSX_PATH: "/source/Simulador Pruebas 2014-2 en adelante.xlsx"
+      ICFES_NATIONAL_CAP: ${ICFES_NATIONAL_CAP:-25000}
+    volumes:
+      - ./data:/data
+      - ./source:/source:ro
+
+  api:
+    build: ./services/api
+    environment:
+      ICFES_DATA_DIR: /data
+      ICFES_DEFAULT_POPULATION: ${ICFES_DEFAULT_POPULATION:-quindio}
+    volumes:
+      - ./data:/data
+    expose:
+      - "8000"
+    restart: unless-stopped
+
+  web:
+    build: ./web
+    ports:
+      - "${WEB_PORT:-8080}:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped

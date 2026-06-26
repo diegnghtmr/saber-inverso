@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Saber Inverso">
+  <!-- Cream rounded tile with ink keyline (DESIGN.MD canvas + ink) -->
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="#fffaf0" stroke="#0a0a0a" stroke-width="2.5"/>
+  <!-- Five ascending bars = the five Saber 11 areas, in the brand palette -->
+  <g>
+    <rect x="12"   y="36" width="5.5" height="16" rx="2" fill="#ff4d8b"/>
+    <rect x="20.75" y="30" width="5.5" height="22" rx="2" fill="#1a3a3a"/>
+    <rect x="29.5"  y="24" width="5.5" height="28" rx="2" fill="#b8a4ed"/>
+    <rect x="38.25" y="18" width="5.5" height="34" rx="2" fill="#ffb084"/>
+    <rect x="47"   y="12" width="5.5" height="40" rx="2" fill="#e8b94a"/>
+  </g>
+</svg>
