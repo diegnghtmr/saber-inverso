@@ -50,16 +50,24 @@ Mahalanobis.
 
 ## Arquitectura
 
-```
-┌─────────────┐     /api (proxy)     ┌──────────────┐     lee     ┌──────────┐
-│  web (Astro)│ ───────────────────▶ │ api (FastAPI)│ ──────────▶ │  ./data  │
-│  nginx:80   │                      │  numpy/scipy │             │  *.json  │
-└─────────────┘                      └──────────────┘             └────▲─────┘
-                                                                       │ escribe
-                                                          ┌────────────┴───────┐
-                                                          │  etl (one-shot)    │
-                                                          │  Socrata + Excel   │
-                                                          └────────────────────┘
+```mermaid
+flowchart LR
+  accTitle: Arquitectura de Saber Inverso
+  accDescr: La web (Astro/nginx) hace de reverse proxy de /api hacia la API FastAPI; la API lee los JSON de ./data, que el ETL genera una sola vez desde Socrata y el Excel.
+
+  classDef app fill:#e3f2fd,stroke:#1565c0,color:#000
+  classDef api fill:#e8f5e9,stroke:#2e7d32,color:#000
+  classDef store fill:#fff3e0,stroke:#e65100,color:#000
+  classDef batch fill:#f3e5f5,stroke:#7b1fa2,color:#000
+
+  web["web (Astro)<br/>nginx:80"]:::app
+  api["api (FastAPI)<br/>numpy / scipy"]:::api
+  data[("./data<br/>*.json")]:::store
+  etl["etl (one-shot)<br/>Socrata + Excel"]:::batch
+
+  web -->|"/api (proxy)"| api
+  api -->|"lee"| data
+  etl -->|"escribe"| data
 ```
 
 - **`services/etl`** — descarga microdatos Saber 11 (Socrata `kgxf-xxbe`), castea,
